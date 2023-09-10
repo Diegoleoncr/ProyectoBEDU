@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Flights.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Icons/1 2.png">
+    <title>Fly now!</title>
+</head>
+
+<body>
+<header> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Icons/Fondo.png" alt="Flynder Logo" height="70px" width="70px" class="navbar-logo">
+                Flynder.com
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Flights.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Flights
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">View Flights</a>
+                            <a class="dropdown-item" href="#">View Rentals</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">View Hotels</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="Search-bar">
+        <h1>
+            <img src="Images/Lupa.png" alt="Search Icon" height="50px" width="50px" class="search-icon">
+            Flight Search
+        </h1>
+        <form action="https://www.google.com/flights" method="GET" target="_blank">
+            <div class="form-group">
+                <label for="fromLocation">From Location:</label>
+                <input type="text" class="form-control" id="fromLocation" name="f" required>
+            </div>
+            <div class="form-group">
+                <label for="toLocation">To Location:</label>
+                <input type="text" class="form-control" id="toLocation" name="t" required>
+            </div>
+            <div class="form-group">
+                <label for="departureDate">Departure Date:</label>
+                <input type="date" class="form-control" id="departureDate" name="d" required>
+            </div>
+            <button type="submit" class="butoncito">Search</button>
+        </form>
+    </div>
+
+    <div class="Vuelos">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Images/Amsterdam.jpeg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Amsterdam</h5>
+                        <p class="card-text">$50 Off today!</p>
+                    </div>
+                </div>
+            </div>
+    
+           
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Images/Cartagena.jpeg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cartagena</h5>
+                        <p class="card-text">25% Off in round trip.</p>
+                    </div>
+                </div>
+            </div>
+    
+          
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Images/Buenos Aires.jpeg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Buenos Aires</h5>
+                        <p class="card-text">Save extra 10% in Business class.</p>
+                    </div>
+                </div>
+            </div>
+<div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Images/Estambul.jpeg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Istanbul</h5>
+                        <p class="card-text">Best option available.</p>
+                    </div>
+                </div>
+            </div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Images/Isla Mujeres.jpeg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Isla Mujeres</h5>
+                        <p class="card-text">15% extra in All inclusives.</p>
+                    </div>
+                </div>
+            </div>
+    
+
+<div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="Images/Lima.jpeg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lima</h5>
+                        <p class="card-text">Disccount week</p>
+                    </div>
+                </div>
+</div>
+<footer class="Footer">
+    <div class="final">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or need assistance, feel free to contact our support team.</p>
+                <p>Email: <a href="mailto:info@example.com">inquiries@flynder.com</a></p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media for updates and special offers:</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" target="_blank">Facebook</a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank">Twitter</a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank">Instagram</a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+         
+                    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
